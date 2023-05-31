@@ -3,25 +3,53 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-col1: #f2f2f2dc;
+  --bg-col2: #d9d9d9dc;
+  --bg-col3: #a6a6a6;
+  --bg-col4: #737373;
+  --bg-col5: #404040;
+  --bg-col6: #737373dc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+#home-image {
+  box-shadow: rgb(0, 0, 0) -20px 20px 35px -12px inset,
+    rgba(0, 0, 0) 20px -20px 35px -10px inset;
+}
+
+#background {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#background::before {
+  background-image: url("/home/homepage.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: auto;
+  z-index: -9999999;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
 }
