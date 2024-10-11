@@ -7,7 +7,9 @@ import { motion } from "framer-motion"
 import { FlagIcon } from "react-flag-kit"
 import { faHouseChimney } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
+import "@fortawesome/fontawesome-svg-core/styles.css"
+import { config } from "@fortawesome/fontawesome-svg-core"
+config.autoAddCss = false /* eslint-disable import/first */
 function Navbar() {
   const { locales } = useRouter()
   const intl = useIntl()
@@ -56,7 +58,7 @@ function Navbar() {
                   {(navContent == "About" || navContent == "Hakkımızda") && (
                     <Link
                       href="/About"
-                      className="px-[0.5rem] h-[100%] w-full justify-center flex items-center bg-[length:0%_100%]  bg-[0%] hover:bg-[length:100%_100%] transition-[1100] duration-500 bg-gradient-to-r from-purple-500 to-pink-500 bg-no-repeat "
+                      className="px-[0.5rem] h-[100%] w-full justify-center flex items-center bg-[length:0%_100%]  bg-[0%] hover:bg-[length:100%_100%] transition-[2000] duration-500 bg-gradient-to-r from-black to-slate-500/50 bg-no-repeat "
                     >
                       {navContent}
                     </Link>
@@ -64,7 +66,7 @@ function Navbar() {
                   {(navContent == "Ürünler" || navContent == "Products") && (
                     <Link
                       href="/Products"
-                      className="h-[100%] w-full flex justify-center items-center bg-[length:0%_100%]  bg-[0%] hover:bg-[length:100%_100%] transition-[1100] duration-500 bg-gradient-to-r from-purple-500 to-pink-500 bg-no-repeat"
+                      className="h-[100%] w-full flex justify-center items-center bg-[length:0%_100%]  bg-[0%] hover:bg-[length:100%_100%] transition-[1000] duration-500 bg-gradient-to-r from-black to-slate-500/50 bg-no-repeat"
                     >
                       {navContent}
                     </Link>
@@ -76,12 +78,9 @@ function Navbar() {
                       smooth={true}
                       offset={-62}
                       duration={1500}
-                      className="h-[100%] cursor-pointer w-full flex justify-center items-center bg-[length:0%_100%]  bg-[0%] hover:bg-[length:100%_100%] transition-[1100] duration-500 bg-gradient-to-r from-purple-500 to-pink-500 bg-no-repeat"
+                      className="h-full cursor-pointer w-full flex justify-center items-center bg-[length:0%_100%]  bg-[0%] hover:bg-[length:100%_100%] transition-[1100] duration-500 bg-gradient-to-r from-black to-slate-500/50 bg-no-repeat"
                     >
-                      <FontAwesomeIcon
-                        icon={faHouseChimney}
-                        className="text-[20px]"
-                      />
+                      <FontAwesomeIcon icon={faHouseChimney} size="lg" />
                     </Link1>
                   )}
                   {navContent == "Ürünler" ||
@@ -96,7 +95,7 @@ function Navbar() {
                       smooth={true}
                       offset={-62}
                       duration={1500}
-                      className="px-[0.5rem] h-[100%] w-full flex justify-center items-center bg-[length:0%_100%] hover:cursor-pointer bg-[0%] hover:bg-[length:100%_100%] transition-[1100] duration-500 bg-gradient-to-r from-purple-500 to-pink-500 bg-no-repeat"
+                      className="px-[0.5rem] h-[100%] w-full flex justify-center items-center bg-[length:0%_100%] hover:cursor-pointer bg-[0%] hover:bg-[length:100%_100%] transition-[1100] duration-500 bg-gradient-to-r from-black to-slate-500/50 bg-no-repeat"
                     >
                       {navContent}
                     </Link1>

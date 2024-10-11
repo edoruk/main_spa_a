@@ -72,7 +72,7 @@ function MobileNav() {
             navContent == "Homepage" ? null : (
             <motion.li
               key={key}
-              className="w-full text-center py-6 text-lg cursor-pointer"
+              className="w-full text-center py-6 text-sm cursor-pointer "
               animate={isMenuClicked ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.1 }}
             >

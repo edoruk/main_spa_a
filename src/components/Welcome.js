@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react"
 import { useScroll, motion, useTransform } from "framer-motion"
 import { Link as LinkScroll } from "react-scroll"
 

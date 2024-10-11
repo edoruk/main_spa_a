@@ -76,9 +76,9 @@ export default function Home({ dir }) {
               <motion.div
                 className="w-full"
                 key={key}
-                initial={key % 2 == 0 ? { x: "100%" } : { x: "-100%" }}
-                whileInView={{ x: 0 }}
-                transition={{ duration: 1.8 }}
+                initial={key % 2 == 0 ? { opacity: 0 } : { opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
               >
                 <DynamicContentCard
