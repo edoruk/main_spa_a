@@ -1,0 +1,18 @@
+{
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/_app": "pages/_app.js",
+  "/api/hello": "pages/api/hello.js",
+  "/tr/404": "pages/tr/404.html",
+  "/en/404": "pages/en/404.html",
+  "/tr/500": "pages/tr/500.html",
+  "/en/500": "pages/en/500.html",
+  "/tr/Kvkk": "pages/tr/Kvkk.html",
+  "/en/Kvkk": "pages/en/Kvkk.html",
+  "/tr/About": "pages/tr/About.html",
+  "/en/About": "pages/en/About.html",
+  "/tr": "pages/tr.html",
+  "/en": "pages/en.html",
+  "/tr/Products": "pages/tr/Products.html",
+  "/en/Products": "pages/en/Products.html"
+}

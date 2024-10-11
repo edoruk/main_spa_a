@@ -1,0 +1,27 @@
+{
+  "index.js -> ../components/Contact": {
+    "id": 8203,
+    "files": [
+      "static/chunks/203.67167d74dcf670f9.js"
+    ]
+  },
+  "index.js -> ../components/HomeContentCard": {
+    "id": 3502,
+    "files": [
+      "static/chunks/502.96466079a5e2e25b.js"
+    ]
+  },
+  "index.js -> ../components/Navbar": {
+    "id": 831,
+    "files": [
+      "static/css/011d829062655983.css",
+      "static/chunks/831.4fe65da87b810127.js"
+    ]
+  },
+  "index.js -> ../components/Welcome": {
+    "id": 7076,
+    "files": [
+      "static/chunks/76.6b6ec098f1407fb3.js"
+    ]
+  }
+}
